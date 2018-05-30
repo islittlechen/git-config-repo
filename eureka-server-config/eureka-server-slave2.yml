@@ -3,14 +3,12 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: peer3
     data-center-info:
       name: mydatacenter
     environment:
       name: dev
   client:
-    registerWithEureka: false
-    fetchRegistry: false
     defaultZone: http://localhost:1110/eureka/,http://localhost:1111/eureka/
 
 management:
