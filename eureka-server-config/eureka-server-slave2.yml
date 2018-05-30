@@ -1,5 +1,5 @@
 server:
-  port: 1112
+  port: 6873
 
 eureka:
   instance:
@@ -10,7 +10,7 @@ eureka:
       name: dev
   client:
     service-url:
-      defaultZone: http://root:123456@peer1:1110/eureka/,http://root:123456@peer2:1111/eureka/
+      defaultZone: http://root:123456@peer1:6871/eureka/,http://root:123456@peer2:6872/eureka/
 
 management:
   security:
