@@ -11,6 +11,7 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+    defaultZone: http://localhost:1111/eureka/,http://localhost:1112/eureka/
 
 security:
   basic:
