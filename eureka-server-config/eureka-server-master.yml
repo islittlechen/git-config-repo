@@ -9,7 +9,8 @@ eureka:
     environment:
       name: dev
   client:
-    defaultZone: http://peer2:1111/eureka/,http://peer3:1112/eureka/
+    service-url:
+      defaultZone: http://peer2:1111/eureka/,http://peer3:1112/eureka/
 
 management:
   security:
