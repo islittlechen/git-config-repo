@@ -9,6 +9,8 @@ eureka:
     environment:
       name: dev
   client:
+    registerWithEureka: false
+    fetchRegistry: false
     defaultZone: http://localhost:1110/eureka/,http://localhost:1112/eureka/
 
 management:
