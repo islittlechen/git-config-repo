@@ -13,6 +13,10 @@ eureka:
     fetch-registry: false
     defaultZone: http://localhost:1111/eureka/,http://localhost:1112/eureka/
 
+management:
+  security:
+    enabled: false
+
 security:
   basic:
     enabled: true
