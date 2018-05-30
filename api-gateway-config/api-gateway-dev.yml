@@ -12,6 +12,6 @@ zuul:
 eureka:
   client:
     service-url:
-       defaultZone: http://localhost:1110/eureka/
+       defaultZone: http://root:123456@peer2:6871/eureka/,http://root:123456@peer2:6872/eureka/,http://root:123456@peer3:6873/eureka/
 
 
