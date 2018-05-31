@@ -3,6 +3,11 @@ server:
 spring:
   application:
     name: api-consumer
+
+management:
+  security:
+    enabled: false
+
 eureka:
   client:
     service-url:
