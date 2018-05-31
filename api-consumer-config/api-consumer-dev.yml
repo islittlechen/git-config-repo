@@ -1,0 +1,9 @@
+server:
+  port: 8890
+spring:
+  application:
+    name: consumer-hello
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@peer2:6871/eureka/,http://root:123456@peer2:6872/eureka/,http://root:123456@peer3:6873/eureka/
