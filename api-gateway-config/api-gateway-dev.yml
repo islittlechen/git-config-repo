@@ -25,7 +25,7 @@ zuul:
       refresh-interval: 1 # 刷新时间窗口的时间，默认值 (秒)
     policies:
       greeting: #与前面配置的routes保持一致
-         limit: 300
+         limit: 1000
          quota: 10
          refresh-interval: 1 #限制美秒访问100次，每次访问请求时间为1秒
 eureka:
