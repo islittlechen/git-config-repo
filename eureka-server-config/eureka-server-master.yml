@@ -2,7 +2,7 @@ server:
   port: 6871
 
 eureka:
-  environment: dev
+  environment: prod
   instance:
     hostname: peer1
   client:
