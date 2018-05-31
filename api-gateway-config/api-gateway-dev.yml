@@ -7,8 +7,9 @@ server:
 
 zuul:
   routes:
-    api-a.path: /api/**
-    api-a.serviceId: api-integration
+    greeting:
+      path: /api/**
+      serviceId: API-INTEGRATION
 eureka:
   client:
     service-url:
