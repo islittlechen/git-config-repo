@@ -4,15 +4,32 @@ spring:
 server:
   port: 10120
 
+management:
+  security:
+    enabled: false
 
 zuul:
+  host:
+    max-total-connections: 500
   routes:
     greeting:
       path: /api/**
-      serviceId: API-INTEGRATION
+      serviceId: API-INTEGRATION # eureka server 注册的服务名一致
+      stripPrefix: false
+  ratelimit:
+    enabled: true
+    behind-proxy: true
+    default-policy:
+      limit: 3000 #可选- 每个刷新时间窗口对应的请求数量限制
+      quota: 30 #可选-  每个刷新时间窗口对应的请求时间限制（秒
+      refresh-interval: 1 # 刷新时间窗口的时间，默认值 (秒)
+    policies:
+      greeting: #与前面配置的routes保持一致
+         limit: 300
+         quota: 10
+         refresh-interval: 1 #限制美秒访问100次，每次访问请求时间为1秒
 eureka:
   client:
     service-url:
        defaultZone: http://root:123456@peer2:6871/eureka/,http://root:123456@peer2:6872/eureka/,http://root:123456@peer3:6873/eureka/
-
 
