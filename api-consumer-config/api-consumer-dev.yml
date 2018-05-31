@@ -1,5 +1,5 @@
 server:
-  port: 11200
+  port: 11201
 spring:
   application:
     name: api-consumer
@@ -11,4 +11,4 @@ management:
 eureka:
   client:
     service-url:
-      defaultZone: http://root:123456@peer2:6871/eureka/,http://root:123456@peer2:6872/eureka/,http://root:123456@peer3:6873/eureka/
+      defaultZone: http://root:123456@peer2:6871/eureka/,http://root:123456@peer2:6872/eureka/
