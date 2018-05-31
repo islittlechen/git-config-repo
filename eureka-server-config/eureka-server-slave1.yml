@@ -2,12 +2,9 @@ server:
   port: 6872
 
 eureka:
+  environment: dev
   instance:
     hostname: peer2
-    data-center-info:
-      name: mydatacenter
-    environment:
-      name: dev
   client:
     service-url:
       defaultZone: http://root:123456@peer1:6871/eureka/,http://root:123456@peer3:6873/eureka/
