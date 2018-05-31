@@ -1,8 +1,8 @@
 server:
-  port: 8890
+  port: 11200
 spring:
   application:
-    name: consumer-hello
+    name: api-consumer
 eureka:
   client:
     service-url:
