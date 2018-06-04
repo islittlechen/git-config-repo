@@ -1,0 +1,23 @@
+server:
+  port: 8894
+
+api:
+  hello: bus-refresh-test
+
+management:
+  security:
+    enabled: false
+
+spring:
+  application:
+      name: bus-refresh-test
+  zipkin:
+    base-url: http://localhost:9411
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://root:123456@peer2:6871/eureka/,http://root:123456@peer2:6872/eureka/,http://root:123456@peer3:6873/eureka/
