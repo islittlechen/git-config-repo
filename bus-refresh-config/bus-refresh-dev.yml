@@ -8,7 +8,7 @@ example:
   service:
     enabled: true
     prefix: +--+
-    suffix: ....
+    suffix: +--+
 
 management:
   security:
