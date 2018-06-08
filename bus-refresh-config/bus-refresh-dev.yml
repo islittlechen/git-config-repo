@@ -1,5 +1,5 @@
 server:
-  port: 8894
+  port: 8895
 
 api:
   hello: bus-refresh-test
