@@ -4,6 +4,12 @@ server:
 api:
   hello: bus-refresh-test-1
 
+example:
+  service:
+    enabled: true
+    prefix: ####
+    suffix: @@@@
+
 management:
   security:
     enabled: false
