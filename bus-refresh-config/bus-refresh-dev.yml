@@ -2,7 +2,7 @@ server:
   port: 8895
 
 api:
-  hello: bus-refresh-test-1
+  hello: bus-refresh-test-2
 
 example:
   service:
