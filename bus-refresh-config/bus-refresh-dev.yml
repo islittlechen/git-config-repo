@@ -7,7 +7,7 @@ api:
 example:
   service:
     enabled: true
-    prefix: ++++
+    prefix: +--+
     suffix: ....
 
 management:
